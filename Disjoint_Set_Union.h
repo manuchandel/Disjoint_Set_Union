@@ -1,17 +1,16 @@
 #ifndef Disjoint_Set_Union_H
 #define Disjoint_Set_Union_H
+#include <unordered_map>
 #define mapping unordered_map
-
 template <class T>
 class Disjoint_Set_Union{
-
     public:
         Disjoint_Set_Union();   //constructor
         void add(T);            // adds new element to the set
-        int getSets();          // returns present number of disjoint sets
-        bool isPresent(T);      // returns whether an element x is present in any set or not
-        T find(T);              // finds set of an element x
-        void merge(T,T);        // merges two sets
+        int getSets();          
+        bool isPresent(T);
+        T find(T);
+        void merge(T,T);
         
 
     private:
